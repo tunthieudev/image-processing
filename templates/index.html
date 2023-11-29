@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data" id="uploadForm">
+        <div>
+            <div class="title">
+                <h1>Xử lý ảnh</h1>
+            </div>
+            <div class="head">
+                <div class="buttons">
+                    <button class="button btn btn-success">Biến đổi âm bản</button>
+                    <button class="button btn btn-success">Phân ngưỡng</button>
+                    <button class="button btn btn-success">Biến đổi logarith</button>
+                    <button class="button btn btn-success">Lược đồ mức xám</button>
+                    <button class="button btn btn-success">Bộ lọc trung bình có trọng số</button>
+                    <button class="button btn btn-success">Bộ lọc trung vị</button>
+                    <button class="button btn btn-success">Toán tử Roberts</button>
+                    <button class="button btn btn-success">Toán tử Sobel</button>
+                    <button class="button btn btn-success">Toán tử Laplacian</button>
+                    <button class="button btn btn-success">Toán tử Prewitt</button>
+                    <button class="button btn btn-success">Phương pháp Canny</button>
+                    <button class="button btn btn-success">Thuật toán OTSU</button>
+                    <button class="button btn btn-success">Phép co</button>
+                    <button class="button btn btn-success">Phép dãn</button>
+                    <button class="button btn btn-success">Phép mở</button>
+                    <button class="button btn btn-success">Phép đóng</button>
+                </div>
+            </div>
+            <div class="info-image">
+                <label for="formFile" class="form-label">INPUT IMAGE</label>
+                <input class="form-control" type="file" id="fileInput" onchange="previewImage()">
+
+                <div class="showImg" style="display: inline-block;">
+                    <img id="imagePreview" alt="Image Preview" name="image"
+                        style="max-width: 300px; max-height: 300px;">
+                </div>
+
+
+                <div class="convertImg" id="convertImg" style="display: inline-block;">
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+<script src="/static/js/main.js"></script>
+
+</html>
