@@ -4,9 +4,7 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from io import BytesIO
 
-from chapter3 import *
-from chapter5 import *
-from chapter7 import *
+from algorithm import *
 
 app = Flask(__name__)
 app.secret_key = "intelligent"
